@@ -16,6 +16,7 @@ module ChatApp
       g.javascripts false
       g.helper false
       g.test_framework false
+    end
       #↑不要なファイルを生成しないようにする設定
 
     # Settings in config/environments/* take precedence over those specified here.

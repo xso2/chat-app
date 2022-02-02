@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   has_many :room_users
   has_many :rooms, through: :room_users
-  has_many :messages #1人のユーザーは、複数のメッセージを送信できます。
+  has_many :messagesv
 
   validates :name, presence: true
 end

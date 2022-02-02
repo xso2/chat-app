@@ -4,9 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable,  :validatable
 
+
   has_many :room_users
   has_many :rooms, through: :room_users
-  has_many :messages #1人のユーザーは、複数のメッセージを送信できます。
 
   validates :name, presence: true
 end

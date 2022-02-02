@@ -8,5 +8,4 @@ class Message < ApplicationRecord
   def was_attached?
     self.image.attached?
   end
-  #画像が存在しなければテキストが必要となり、画像があればテキストは不要になる
 end

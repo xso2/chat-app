@@ -43,7 +43,7 @@
       </div>
     </div>
   </div>
-
+</div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
   <div class="form-input">
@@ -55,7 +55,7 @@
   </div>
   <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
-</div>
+
 <%#form_withの引数に@room, @messageの2つを渡している点に注意してください。
 
 これは、messagesのルーティングがroomsにネストされているためです。チャットルームとメッセージとの間には、あるチャットルームに属しているメッセージ、という親子関係があります。

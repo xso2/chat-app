@@ -10,8 +10,7 @@
   <% current_user.rooms.each do |room| %>
     <div class="room">
       <div class="room-name">
-        <%= link_to room.name, room_messages_path(room) %>
-      <%#サイドバーのチャットルーム名にとリンクを設定します。パスにroomを引数とすることで、メッセージと紐付いているチャットルームのidを持たせることができます。したがって、チャットルーム名をクリックすると、messagesコントローラーのindexアクションが実行され、チャットルームのページに遷移できます。%>
+        <%= link_to room.name, room_messages_path(room) %#サイドバーのチャットルーム名にとリンクを設定します。パスにroomを引数とすることで、メッセージと紐付いているチャットルームのidを持たせることができます。したがって、チャットルーム名をクリックすると、messagesコントローラーのindexアクションが実行され、チャットルームのページに遷移できます。
       </div>
     </div>
   <% end %>

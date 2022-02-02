@@ -18,7 +18,6 @@ class MessagesController < ApplicationController
 #messagesコントローラーにcreateアクションを定義します。
 #@room.messages.newでチャットルームに紐づいたメッセージのインスタンスを生成し、message_paramsを引数にして、privateメソッドを呼び出します。
 #生成したインスタンスを@messageに代入し、saveメソッドでメッセージの内容をmessagesテーブルに保存します。
-#メッセージを保存できた場合とできなかった場合で条件分岐の処理を行います。
 
   private
 

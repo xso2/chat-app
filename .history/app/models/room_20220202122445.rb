@@ -5,4 +5,4 @@ class Room < ApplicationRecord
 
   validates :name, presence: true
 end
-#これで、roomを削除したとき、roomに関連するmessagesテーブルのレコードとroom_usersテーブルのレコードも、一緒に削除されるように設定できました。
+#

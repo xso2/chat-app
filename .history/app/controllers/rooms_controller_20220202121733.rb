@@ -21,7 +21,6 @@ class RoomsController < ApplicationController
     room.destroy
     redirect_to root_path
   end
-  #"チャットを終了する"をクリックすると、チャットルームが削除されるようにリンクを設定します。
 
   private
 

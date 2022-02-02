@@ -23,6 +23,8 @@ class RoomsController < ApplicationController
   end
   #"チャットを終了する"をクリックすると、チャットルームが削除されるようにリンクを設定します。
 
+
+
   private
 
   def room_params

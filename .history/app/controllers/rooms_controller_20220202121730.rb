@@ -16,13 +16,8 @@ class RoomsController < ApplicationController
     end
   end
 
-  def destroy
-    room = Room.find(params[:id])
-    room.destroy
-    redirect_to root_path
-  end
-  #"チャットを終了する"をクリックすると、チャットルームが削除されるようにリンクを設定します。
 
+  
   private
 
   def room_params

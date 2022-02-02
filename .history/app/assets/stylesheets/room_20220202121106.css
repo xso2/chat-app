@@ -90,6 +90,3 @@ select {
   width: 100%;
 }
 
-.field_with_errors {
-  display: contents; /*contentsを指定すると、その要素のボックスだけが表示されなくなります
-}

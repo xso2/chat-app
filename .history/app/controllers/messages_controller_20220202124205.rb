@@ -27,7 +27,7 @@ class MessagesController < ApplicationController
 
   def message_params
     params.require(:message).permit(:content, :image).merge(user_id: current_user.id)
-    #imageという名前で送られてきた画像ファイルの保存を許可できます。
+    #
   end
 #privateメソッドとしてmessage_paramsを定義し、メッセージの内容contentをmessagesテーブルへ保存できるようにします。
 #パラメーターの中に、ログインしているユーザーのidと紐付いている、メッセージの内容contentを受け取れるように許可します。

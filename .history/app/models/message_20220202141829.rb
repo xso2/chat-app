@@ -5,8 +5,5 @@ class Message < ApplicationRecord
 
   validates :content, presence: true, unless: :was_attached?
   #空の場合はDBに保存しないというバリデーション
-  def was_attached?
-    self.image.attached?
-  end
-  #画像が存在しなければテキストが必要となり、画像があればテキストは不要になる
+  
 end

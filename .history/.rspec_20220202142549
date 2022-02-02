@@ -1,0 +1,2 @@
+--require spec_helper
+--format documentation <この記述をすることで、テスト実行時のログがより詳細に表示されるようになります。
